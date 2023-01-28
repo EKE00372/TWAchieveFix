@@ -8,12 +8,8 @@ local function AchievementButton_Localize_Fix(button)
 	button.HiddenDescription:SetFontObject("GameFontHighlight")
 	button.DateCompleted:SetPoint("TOP", button.Shield, "BOTTOM", -2, 6)
 end
-
 hooksecurefunc("AchievementButton_Localize", AchievementButton_Localize_Fix)
 
-
-local function AchievementFrame_LocalizeCriteria_Fix(frame)
+function AchievementFrame_LocalizeCriteria (frame)
 	frame.Name:SetFontObject("GameFontHighlight")
 end
-
-hooksecurefunc("AchievementFrame_LocalizeCriteria", AchievementFrame_LocalizeCriteria_Fix)
